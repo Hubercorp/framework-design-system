@@ -7,5 +7,8 @@
     {{/if}}
   </a>
   <nav class="ldh-nav" aria-label="Primary navigation">{{navigation}}</nav>
-  <a class="ldh-header__link" href="mailto:{{@custom.contact_email}}">Work with me <span aria-hidden="true">↗</span></a>
+  <div class="ldh-header__actions">
+    <a class="ldh-header__signup" href="#/portal/signup" data-portal="signup">Sign up</a>
+    <a class="ldh-header__link" href="mailto:{{@custom.contact_email}}">Let’s talk <span aria-hidden="true">↗</span></a>
+  </div>
 </header>
