@@ -1,0 +1,46 @@
+/*
+ * Easy visual overrides
+ * Change these values to adjust the header without touching the main stylesheet.
+ */
+
+.ldh-header {
+  min-height: 96px;
+  padding: 16px 28px;
+}
+
+.ldh-brand img {
+  width: 240px;
+  height: 58px;
+}
+
+.ldh-header__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--ldh-coral);
+  color: #181817;
+  font-size: 1.5rem;
+  font-weight: 850;
+  transition: transform .2s ease, filter .2s ease;
+}
+
+.ldh-header__link:hover {
+  transform: translateY(-2px);
+  filter: brightness(.97);
+}
+
+@media (max-width: 700px) {
+  .ldh-header {
+    min-height: 80px;
+    padding: 10px 14px;
+  }
+
+  .ldh-brand img {
+    width: 185px;
+    height: 48px;
+  }
+}
