@@ -1,0 +1,25 @@
+<section class="ldh-hero">
+  <div class="ldh-hero__copy">
+    <span class="ldh-kicker">The Liège Data Hub · Make it happen</span>
+    <h1>{{@custom.hero_title}}</h1>
+    <h2>{{@custom.hero_subtitle}}</h2>
+    <p>{{@custom.hero_description}}</p>
+    <div class="ldh-actions">
+      <a class="ldh-button" href="{{@custom.primary_cta_url}}">{{@custom.primary_cta_text}} <span aria-hidden="true">→</span></a>
+      <a class="ldh-text-link" href="{{@custom.secondary_cta_url}}">{{@custom.secondary_cta_text}} <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="ldh-proof" aria-label="Areas of expertise">
+      <span>Strategy</span><span>Architecture</span><span>Governance</span><span>AI delivery</span>
+    </div>
+  </div>
+  <div class="ldh-hero__visual" aria-hidden="true">
+    <div class="ldh-hero__disc"></div>
+    {{#if @site.logo}}
+      <img src="{{@site.logo}}" alt="">
+    {{else}}
+      <div class="ldh-mascot-fallback">LDH</div>
+    {{/if}}
+    <span class="ldh-orbit ldh-orbit--one">Framework</span>
+    <span class="ldh-orbit ldh-orbit--two">Value</span>
+  </div>
+</section>

@@ -1,0 +1,12 @@
+{{!< default}}
+<section class="ldh-page-head">
+  <span class="ldh-kicker">Knowledge base</span>
+  <h1>{{@site.title}}</h1>
+  <p>{{@site.description}}</p>
+</section>
+<section class="ldh-section">
+  <div class="ldh-grid">
+    {{#foreach posts}}{{> "post-card"}}{{/foreach}}
+  </div>
+  {{pagination}}
+</section>

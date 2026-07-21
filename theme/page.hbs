@@ -1,0 +1,15 @@
+{{!< default}}
+{{#post}}
+<article class="ldh-article ldh-page {{post_class}}">
+  {{#match @page.show_title_and_feature_image}}
+  <header class="ldh-article__head">
+    <h1>{{title}}</h1>
+    {{#if custom_excerpt}}<p>{{custom_excerpt}}</p>{{/if}}
+    {{#if feature_image}}
+      <img class="ldh-article__feature" src="{{img_url feature_image size="xl"}}" alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}">
+    {{/if}}
+  </header>
+  {{/match}}
+  <div class="gh-content">{{content}}</div>
+</article>
+{{/post}}

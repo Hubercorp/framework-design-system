@@ -1,0 +1,15 @@
+<article class="ldh-card {{post_class}}">
+  <a href="{{url}}" class="ldh-card__link">
+    {{#if feature_image}}
+      <img class="ldh-card__image" src="{{img_url feature_image size="m"}}" alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}">
+    {{else}}
+      <div class="ldh-card__placeholder" aria-hidden="true"><span>LDH</span></div>
+    {{/if}}
+    <div class="ldh-card__body">
+      {{#if primary_tag}}<span class="ldh-card__tag">{{primary_tag.name}}</span>{{/if}}
+      <h3>{{title}}</h3>
+      <p>{{excerpt words="24"}}</p>
+      <span class="ldh-card__meta">{{reading_time}} · Read →</span>
+    </div>
+  </a>
+</article>

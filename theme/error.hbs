@@ -1,0 +1,7 @@
+{{!< default}}
+<section class="ldh-error">
+  {{#if @site.logo}}<img src="{{@site.logo}}" alt="">{{/if}}
+  <span class="ldh-kicker">Error {{statusCode}}</span>
+  <h1>{{message}}</h1>
+  <a class="ldh-button" href="{{@site.url}}">Back home →</a>
+</section>

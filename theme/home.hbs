@@ -1,0 +1,26 @@
+{{!< default}}
+{{> "hero"}}
+{{#if @custom.show_framework}}{{> "framework"}}{{/if}}
+
+<section class="ldh-section">
+  <div class="ldh-section__heading ldh-section__heading--row">
+    <div>
+      <span class="ldh-kicker">Latest articles</span>
+      <h2>Insights, frameworks and perspectives.</h2>
+    </div>
+    <a href="/articles/">View all articles →</a>
+  </div>
+  <div class="ldh-grid">
+    {{#get "posts" limit="6" include="tags,authors"}}
+      {{#foreach posts}}{{> "post-card"}}{{/foreach}}
+    {{/get}}
+  </div>
+</section>
+
+<section class="ldh-cta">
+  <div>
+    <span class="ldh-kicker">Let's make it happen</span>
+    <h2>A data initiative should deliver value, not another layer of complexity.</h2>
+  </div>
+  <a class="ldh-button ldh-button--coral" href="mailto:{{@custom.contact_email}}">Work with me →</a>
+</section>

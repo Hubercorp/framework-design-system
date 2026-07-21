@@ -1,0 +1,9 @@
+{{!< default}}
+{{#tag}}
+<section class="ldh-page-head">
+  <span class="ldh-kicker">Topic</span>
+  <h1>{{name}}</h1>
+  {{#if description}}<p>{{description}}</p>{{/if}}
+</section>
+{{/tag}}
+<section class="ldh-section"><div class="ldh-grid">{{#foreach posts}}{{> "post-card"}}{{/foreach}}</div>{{pagination}}</section>

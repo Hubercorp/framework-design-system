@@ -4,10 +4,12 @@ The Ghost design system for **The Liège Data Hub**.
 
 Warm editorial direction, original floppy-disk identity, reusable components and a production-ready Ghost theme.
 
-## Current milestone
+## Sprint 2
 
-- Original logo and mascot preserved
+- Original logo and mascot are supplied through Ghost's Site logo setting
 - Anthropic-inspired editorial layout
 - Ghost 6 compatible theme
 - Responsive homepage, articles and framework cards
-- Design tokens and SVG asset library
+- GScan validated with no errors
+
+The installable source lives in [`theme/`](theme/).

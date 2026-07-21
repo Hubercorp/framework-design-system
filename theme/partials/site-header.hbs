@@ -1,0 +1,11 @@
+<header class="ldh-header">
+  <a class="ldh-brand" href="{{@site.url}}" aria-label="{{@site.title}}">
+    {{#if @site.logo}}
+      <img src="{{@site.logo}}" alt="{{@site.title}}">
+    {{else}}
+      <span class="ldh-brand__fallback">The Liège Data Hub</span>
+    {{/if}}
+  </a>
+  <nav class="ldh-nav" aria-label="Primary navigation">{{navigation}}</nav>
+  <a class="ldh-header__link" href="mailto:{{@custom.contact_email}}">Let’s talk <span aria-hidden="true">↗</span></a>
+</header>
