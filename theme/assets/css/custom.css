@@ -58,6 +58,162 @@
   filter: brightness(.97);
 }
 
+/* v2.3 — requested CTA correction */
+.ldh-cta .ldh-button,
+.ldh-cta .ldh-button--coral {
+  background: var(--ldh-coral) !important;
+  color: #181817 !important;
+  border-color: var(--ldh-coral) !important;
+}
+
+/* v2.4.5 — architecture lenses around the existing hero visual */
+.ldh-lenses {
+  position: absolute;
+  inset: 7% 2%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.ldh-lenses span {
+  position: absolute;
+  padding: 8px 12px;
+  border: 1px solid rgba(35,48,165,.18);
+  border-radius: 999px;
+  background: rgba(255,253,248,.94);
+  color: var(--ldh-navy-dark);
+  font-size: 1.15rem;
+  font-weight: 850;
+  box-shadow: 0 8px 24px rgba(17,26,86,.07);
+}
+
+.ldh-lenses span:nth-child(1) { top: 4%; left: 12%; }
+.ldh-lenses span:nth-child(2) { top: 18%; right: 0; }
+.ldh-lenses span:nth-child(3) { bottom: 8%; right: 5%; }
+.ldh-lenses span:nth-child(4) { bottom: 2%; left: 9%; }
+.ldh-lenses span:nth-child(5) { top: 38%; left: 0; }
+
+/* v2.4.5 — concise About section, using the existing visual language */
+.ldh-about {
+  margin-top: 18px;
+  border: 1px solid rgba(35,48,165,.1);
+  border-radius: 20px;
+  background: var(--ldh-beige-light);
+}
+
+.ldh-about__intro {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) minmax(320px,.8fr);
+  gap: 56px;
+  align-items: end;
+}
+
+.ldh-about__intro h2 {
+  max-width: 820px;
+}
+
+.ldh-about__intro > p {
+  margin: 0;
+  color: var(--ldh-muted);
+  font-size: 1.85rem;
+}
+
+.ldh-about__journey {
+  display: grid;
+  grid-template-columns: repeat(5,minmax(0,1fr));
+  gap: 16px;
+  margin-top: 52px;
+}
+
+.ldh-about__journey article {
+  min-height: 180px;
+  padding: 24px;
+  border-radius: 18px;
+  background: var(--ldh-beige);
+}
+
+.ldh-about__journey span {
+  display: block;
+  color: var(--ldh-coral);
+  font-weight: 900;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+}
+
+.ldh-about__journey strong {
+  display: block;
+  margin-top: 24px;
+  color: var(--ldh-navy-dark);
+  font-family: var(--ldh-font-display);
+  font-size: 1.9rem;
+  line-height: 1.15;
+}
+
+.ldh-about__journey small {
+  display: block;
+  margin-top: 10px;
+  color: var(--ldh-muted);
+  font-size: 1.4rem;
+  line-height: 1.45;
+}
+
+.ldh-about__positioning {
+  display: grid;
+  grid-template-columns: minmax(0,1.2fr) auto;
+  gap: 32px;
+  align-items: center;
+  margin-top: 24px;
+  padding: 28px 30px;
+  border-radius: 18px;
+  background: var(--ldh-navy-dark);
+  color: white;
+}
+
+.ldh-about__statement strong {
+  display: block;
+  font-family: var(--ldh-font-display);
+  font-size: 2.5rem;
+  line-height: 1.15;
+}
+
+.ldh-about__statement p {
+  max-width: 760px;
+  margin: 10px 0 0;
+  color: rgba(255,255,255,.72);
+  font-size: 1.55rem;
+}
+
+.ldh-about__pillars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.ldh-about__pillars span {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: var(--ldh-coral);
+  color: #181817;
+  font-size: 1.25rem;
+  font-weight: 850;
+}
+
+@media (max-width: 1050px) {
+  .ldh-about__intro,
+  .ldh-about__positioning {
+    grid-template-columns: 1fr;
+  }
+
+  .ldh-about__journey {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  .ldh-about__pillars {
+    justify-content: flex-start;
+  }
+}
+
 @media (max-width: 700px) {
   .ldh-header {
     min-height: 80px;
@@ -87,6 +243,15 @@
     font-size: 1.3rem;
     box-shadow: 0 5px 0 rgba(17, 26, 86, .12);
   }
+
+  .ldh-lenses span {
+    font-size: 1rem;
+    padding: 6px 9px;
+  }
+
+  .ldh-about__journey {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 480px) {
@@ -101,12 +266,4 @@
   .ldh-header__link {
     padding: 0 11px;
   }
-}
-
-/* v2.3 — requested CTA correction */
-.ldh-cta .ldh-button,
-.ldh-cta .ldh-button--coral {
-  background: var(--ldh-coral) !important;
-  color: #181817 !important;
-  border-color: var(--ldh-coral) !important;
 }
