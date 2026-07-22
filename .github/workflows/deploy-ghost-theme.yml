@@ -58,6 +58,10 @@ jobs:
 
           echo "✅ Secrets OK"
 
+      - name: Fetch high-resolution PNG mascot
+        shell: bash
+        run: bash theme/scripts/fetch-brand-assets.sh
+
       - name: Deploy theme through Ghost Admin API
         uses: TryGhost/action-deploy-theme@v1.6.6
         with:
@@ -75,3 +79,4 @@ jobs:
             .github
             README.md
             node_modules
+            scripts
