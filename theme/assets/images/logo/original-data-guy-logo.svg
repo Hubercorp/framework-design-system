@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" role="img" aria-labelledby="title desc">
+  <title id="title">The Liège Data Guy floppy disk mascot</title>
+  <desc id="desc">A friendly retro floppy disk mascot in the colours of The Liège Data Hub.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#111A56" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <path d="M88 50h210l62 62v242c0 17-13 30-30 30H88c-17 0-30-13-30-30V80c0-17 13-30 30-30Z" fill="#2330A5"/>
+    <path d="M298 50v74h62" fill="#FF8980"/>
+    <path d="M105 50h166v105H105z" fill="#FFFDF8"/>
+    <path d="M226 66h30v73h-30z" fill="#111A56"/>
+    <rect x="101" y="208" width="216" height="136" rx="22" fill="#F5F2E8"/>
+    <rect x="126" y="235" width="166" height="78" rx="16" fill="#FFFDF8"/>
+    <circle cx="171" cy="270" r="11" fill="#111A56"/>
+    <circle cx="247" cy="270" r="11" fill="#111A56"/>
+    <path d="M171 301c19 18 57 18 76 0" fill="none" stroke="#FF8980" stroke-width="10" stroke-linecap="round"/>
+    <path d="M76 176c-22 4-39 20-46 43" fill="none" stroke="#111A56" stroke-width="14" stroke-linecap="round"/>
+    <path d="M344 176c22 4 39 20 46 43" fill="none" stroke="#111A56" stroke-width="14" stroke-linecap="round"/>
+    <path d="M115 384l-28 24" fill="none" stroke="#111A56" stroke-width="14" stroke-linecap="round"/>
+    <path d="M305 384l28 24" fill="none" stroke="#111A56" stroke-width="14" stroke-linecap="round"/>
+  </g>
+</svg>
