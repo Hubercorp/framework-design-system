@@ -56,10 +56,12 @@ jobs:
 
           echo "Ghost deployment secrets are present."
 
-      - name: Deploy theme through Ghost Admin API
+            - name: Deploy theme through Ghost Admin API
         uses: TryGhost/action-deploy-theme@v1.6.6
         with:
           api-url: ${{ secrets.GHOST_ADMIN_API_URL || secrets.GHOST_ADMIN_URL }}
           api-key: ${{ secrets.GHOST_ADMIN_API_KEY }}
           working-directory: theme
+          theme-name: the-liege-data-hub-ghost-theme-v2.4.8
+          exclude: ".git .github README.md node_modules"
           exclude: ".git .github README.md node_modules"
