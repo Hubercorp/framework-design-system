@@ -58,22 +58,13 @@ jobs:
 
           echo "✅ Secrets OK"
 
-      - name: Fetch high-resolution PNG mascot
-        shell: bash
-        run: bash theme/scripts/fetch-brand-assets.sh
-
       - name: Deploy theme through Ghost Admin API
         uses: TryGhost/action-deploy-theme@v1.6.6
         with:
           api-url: ${{ secrets.GHOST_ADMIN_API_URL || secrets.GHOST_ADMIN_URL }}
           api-key: ${{ secrets.GHOST_ADMIN_API_KEY }}
-
-          # dossier contenant le thème
           working-directory: theme
-
-          # nom EXACT du thème actuellement actif dans Ghost
           theme-name: the-liege-data-hub-ghost-theme-v2.4.8
-
           exclude: |
             .git
             .github
