@@ -1,7 +1,7 @@
 {
   "name": "the-liege-data-hub-framework",
   "description": "Anthropic-inspired Ghost theme for The Liège Data Hub using the original brand identity.",
-  "version": "2.4.5",
+  "version": "2.4.6",
   "engines": {
     "ghost": ">=6.0.0"
   },
@@ -13,46 +13,16 @@
   "config": {
     "posts_per_page": 9,
     "custom": {
-      "hero_title": {
-        "type": "text",
-        "default": "Make it happen."
-      },
-      "hero_subtitle": {
-        "type": "text",
-        "default": "Business-driven Data Management, Architecture & AI."
-      },
-      "hero_description": {
-        "type": "text",
-        "default": "From strategy to value. Pragmatic frameworks, robust architecture and delivery that creates measurable business impact."
-      },
-      "primary_cta_text": {
-        "type": "text",
-        "default": "Explore the framework"
-      },
-      "primary_cta_url": {
-        "type": "text",
-        "default": "/framework/"
-      },
-      "secondary_cta_text": {
-        "type": "text",
-        "default": "Read articles"
-      },
-      "secondary_cta_url": {
-        "type": "text",
-        "default": "/articles/"
-      },
-      "show_framework": {
-        "type": "boolean",
-        "default": true
-      },
-      "contact_email": {
-        "type": "text",
-        "default": "hello@theliegedatahub.be"
-      },
-      "linkedin_url": {
-        "type": "text",
-        "default": "https://www.linkedin.com/"
-      }
+      "hero_title": {"type": "text", "default": "Make it happen."},
+      "hero_subtitle": {"type": "text", "default": "Business-driven Data Management, Architecture & AI."},
+      "hero_description": {"type": "text", "default": "From strategy to value. Pragmatic frameworks, robust architecture and delivery that creates measurable business impact."},
+      "primary_cta_text": {"type": "text", "default": "Explore the framework"},
+      "primary_cta_url": {"type": "text", "default": "/framework/"},
+      "secondary_cta_text": {"type": "text", "default": "Read articles"},
+      "secondary_cta_url": {"type": "text", "default": "/articles/"},
+      "show_framework": {"type": "boolean", "default": true},
+      "contact_email": {"type": "text", "default": "hello@theliegedatahub.be"},
+      "linkedin_url": {"type": "text", "default": "https://www.linkedin.com/"}
     }
   }
 }
