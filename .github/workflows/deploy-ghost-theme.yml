@@ -7,6 +7,7 @@ on:
     paths:
       - "theme/**"
       - ".github/workflows/deploy-ghost-theme.yml"
+
   workflow_dispatch:
 
 permissions:
@@ -34,34 +35,43 @@ jobs:
           GHOST_ADMIN_API_KEY: ${{ secrets.GHOST_ADMIN_API_KEY }}
         run: |
           set -euo pipefail
+
           API_URL="${GHOST_ADMIN_API_URL:-${GHOST_ADMIN_URL:-}}"
 
           if [ -z "$API_URL" ]; then
-            echo "Missing secret: GHOST_ADMIN_API_URL (or legacy GHOST_ADMIN_URL)."
+            echo "❌ Missing secret GHOST_ADMIN_API_URL"
             exit 1
           fi
 
           if [ -z "$GHOST_ADMIN_API_KEY" ]; then
-            echo "Missing secret: GHOST_ADMIN_API_KEY."
+            echo "❌ Missing secret GHOST_ADMIN_API_KEY"
             exit 1
           fi
 
           case "$API_URL" in
             https://*) ;;
             *)
-              echo "The Ghost Admin API URL must use HTTPS."
+              echo "❌ Ghost Admin API URL must use HTTPS."
               exit 1
               ;;
           esac
 
-          echo "Ghost deployment secrets are present."
+          echo "✅ Secrets OK"
 
-            - name: Deploy theme through Ghost Admin API
+      - name: Deploy theme through Ghost Admin API
         uses: TryGhost/action-deploy-theme@v1.6.6
         with:
           api-url: ${{ secrets.GHOST_ADMIN_API_URL || secrets.GHOST_ADMIN_URL }}
           api-key: ${{ secrets.GHOST_ADMIN_API_KEY }}
+
+          # dossier contenant le thème
           working-directory: theme
+
+          # nom EXACT du thème actuellement actif dans Ghost
           theme-name: the-liege-data-hub-ghost-theme-v2.4.8
-          exclude: ".git .github README.md node_modules"
-          exclude: ".git .github README.md node_modules"
+
+          exclude: |
+            .git
+            .github
+            README.md
+            node_modules
