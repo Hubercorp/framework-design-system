@@ -54,3 +54,55 @@
     min-height: 0;
   }
 }
+
+/* Navy site header with accessible contrasting controls. */
+.ldh-header {
+  background: rgba(17, 26, 86, .96);
+  border-color: rgba(255, 255, 255, .16);
+  color: var(--ldh-white);
+  box-shadow: 0 14px 34px rgba(17, 26, 86, .18);
+}
+
+.ldh-brand {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 12px;
+  background: var(--ldh-beige-light);
+}
+
+.ldh-brand__fallback {
+  color: var(--ldh-navy-dark);
+}
+
+.ldh-nav a {
+  color: var(--ldh-white);
+}
+
+.ldh-nav a::after {
+  background: var(--ldh-coral);
+}
+
+.ldh-header__link {
+  border-color: var(--ldh-coral);
+  background: var(--ldh-coral);
+  color: var(--ldh-ink);
+}
+
+.ldh-header__link:hover {
+  border-color: var(--ldh-beige-light);
+  background: var(--ldh-beige-light);
+  color: var(--ldh-navy-dark);
+  filter: none;
+}
+
+.ldh-header a:focus-visible {
+  outline: 3px solid var(--ldh-coral);
+  outline-offset: 4px;
+}
+
+@media (max-width: 700px) {
+  .ldh-brand {
+    padding: 4px 8px;
+  }
+}
