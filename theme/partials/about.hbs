@@ -1,25 +1,28 @@
 <section class="ldh-section ldh-about" id="about">
   <div class="ldh-about__intro">
-    <div>
-      <span class="ldh-kicker">About</span>
-      <h2>Business instinct. Technical curiosity. Architecture in the making.</h2>
+    <div class="ldh-about__identity">
+      {{#if @custom.profile_image_url}}
+        <img class="ldh-about__portrait" src="{{@custom.profile_image_url}}" alt="Jérôme Huberty">
+      {{/if}}
+      <div>
+        <span class="ldh-kicker">About</span>
+        <h2>Business instinct. Technical curiosity. Architecture in the veins.</h2>
+      </div>
     </div>
-    <p>I grew up in an entrepreneurial family where creating value was part of everyday life. At twelve, I built my first website. Since then, I have moved through technology, international trade, finance, audit, transformation and data — always at the point where business intent must become something teams can actually build.</p>
+    <p>I grew up in an entrepreneurial family where creating value was part of everyday life. That instinct stayed with me, together with a deep interest in technology and a conviction that the best outcomes happen when business and IT genuinely understand each other.</p>
   </div>
 
   <div class="ldh-about__journey" aria-label="Journey from business to technology">
-    <article><span>12 years</span><strong>First website</strong><small>Curiosity became practice.</small></article>
-    <article><span>16 years</span><strong>Computer science</strong><small>Pascal, web and technical studies.</small></article>
-    <article><span>18 years</span><strong>International exchange</strong><small>NYC &amp; Antwerpen broadened my outlook.</small></article>
-    <article><span>Finance</span><strong>Business foundations</strong><small>Corporate finance, accounting and audit.</small></article>
-    <article><span>Data Science</span><strong>UNamur</strong><small>Executive Master in Data Science &amp; AI.</small></article>
-    <article><span>Today</span><strong>Business × IT</strong><small>Data architecture, governance and AI delivery.</small></article>
+    <article><span>Early stage</span><strong>Building from curiosity</strong><small>At 12, I built my first website and discovered how technology turns an idea into something tangible.</small></article>
+    <article><span>Teen years</span><strong>A deliberate technical turn</strong><small>At 16, I moved into technical studies to focus on computer science, from Pascal to web development.</small></article>
+    <article><span>Finance &amp; Data Science</span><strong>ICHEC × UNamur</strong><small>A Master in Accounting &amp; Corporate Finance at ICHEC, later complemented by an Executive Master in Data Science &amp; AI at UNamur.</small></article>
+    <article><span>Today</span><strong>Business × IT for large organisations</strong><small>I work across data advisory, modelling, architecture, governance and AI delivery — translating ambition into solutions teams can build and scale.</small></article>
   </div>
 
   <div class="ldh-about__positioning">
     <div class="ldh-about__statement">
       <strong>I connect business ambition with technical execution.</strong>
-      <p>Today, I work across data modelling, governance, architecture decisions and AI delivery. My role is to help business and IT understand each other, make clearer choices and move from ideas to measurable value.</p>
+      <p>My sweet spot is the space between strategy and delivery: understanding the business, shaping the architecture, and helping teams move toward measurable value.</p>
     </div>
     <div class="ldh-about__pillars">
       <span>Business value</span>
