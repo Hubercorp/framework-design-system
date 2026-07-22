@@ -1,7 +1,7 @@
 {
   "name": "the-liege-data-hub",
   "description": "Anthropic-inspired Ghost theme for The Liège Data Hub using the original brand identity.",
-  "version": "2.4.10",
+  "version": "2.4.11",
   "engines": {
     "ghost": ">=6.0.0"
   },
@@ -23,7 +23,7 @@
       "show_framework": {"type": "boolean", "default": true},
       "contact_email": {"type": "text", "default": "hello@theliegedatahub.be"},
       "profile_image_url": {"type": "text", "default": ""},
-      "linkedin_url": {"type": "text", "default": "https://www.linkedin.com/"}
+      "linkedin_url": {"type": "text", "default": "https://www.linkedin.com/in/hubertyjerome/"}
     }
   }
 }
