@@ -1,7 +1,7 @@
 {
   "name": "the-liege-data-hub",
   "description": "Anthropic-inspired Ghost theme for The Liège Data Hub using the original brand identity.",
-  "version": "2.4.11",
+  "version": "2.4.12",
   "engines": {
     "ghost": ">=6.0.0"
   },
