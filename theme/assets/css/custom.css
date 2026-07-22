@@ -102,3 +102,11 @@
     padding: 0 11px;
   }
 }
+
+/* v2.3 — requested CTA correction */
+.ldh-cta .ldh-button,
+.ldh-cta .ldh-button--coral {
+  background: var(--ldh-coral) !important;
+  color: #181817 !important;
+  border-color: var(--ldh-coral) !important;
+}
