@@ -222,3 +222,127 @@
   .ldh-brand img { width: 108px; }
   .ldh-header__link { padding: 0 11px; }
 }
+
+/* Mobile contrast and vertical rhythm */
+@media (max-width: 700px) {
+  body {
+    background: #e9e4d9;
+  }
+
+  .ldh-hero {
+    padding: 38px 20px 24px;
+    border-radius: 20px;
+    background: var(--ldh-beige-light);
+  }
+
+  .ldh-hero h1 {
+    font-size: clamp(5.2rem, 17vw, 6.4rem);
+  }
+
+  .ldh-hero h2 {
+    margin-top: 22px;
+    font-size: 3.2rem;
+  }
+
+  .ldh-hero p {
+    font-size: 1.6rem;
+  }
+
+  .ldh-hero__visual {
+    min-height: 300px;
+    margin-top: 12px;
+  }
+
+  .ldh-hero__data-guy {
+    width: min(205px, 54%);
+  }
+
+  .ldh-proof {
+    margin-top: 26px;
+  }
+
+  .ldh-section {
+    padding: 52px 20px;
+  }
+
+  .ldh-framework {
+    margin-top: 10px;
+    background: var(--ldh-navy-dark);
+    border-color: transparent;
+    color: white;
+  }
+
+  .ldh-framework .ldh-kicker {
+    color: var(--ldh-coral);
+  }
+
+  .ldh-framework h2 {
+    color: white;
+  }
+
+  .ldh-framework .ldh-section__heading p {
+    color: rgba(255,255,255,.72);
+  }
+
+  .ldh-framework__steps {
+    margin-top: 34px;
+    gap: 12px;
+  }
+
+  .ldh-framework__steps li {
+    min-height: auto;
+    padding: 68px 20px 22px;
+    background: var(--ldh-beige-light);
+  }
+
+  .ldh-about {
+    margin-top: 10px;
+    background: var(--ldh-beige);
+    border-color: rgba(17,26,86,.14);
+  }
+
+  .ldh-about__journey {
+    margin-top: 34px;
+    gap: 12px;
+  }
+
+  .ldh-about__journey article {
+    min-height: auto;
+    background: var(--ldh-beige-light);
+    border: 1px solid rgba(17,26,86,.10);
+  }
+
+  .ldh-about-me {
+    padding: 20px;
+    gap: 24px;
+    border-radius: 22px;
+  }
+
+  .ldh-about-me__portrait-wrap,
+  .ldh-about-me__portrait {
+    min-height: 250px;
+  }
+
+  .ldh-clients {
+    margin-top: 10px;
+    border-radius: 22px;
+    background: var(--ldh-lavender);
+  }
+
+  .ldh-clients__grid--names-only article {
+    min-height: 80px;
+    background: var(--ldh-beige-light);
+    border-radius: 16px;
+  }
+
+  .ldh-cta {
+    margin: 10px 0;
+    padding: 42px 22px;
+    gap: 24px;
+    border-radius: 24px;
+  }
+
+  .ldh-cta h2 {
+    font-size: 3.5rem;
+  }
+}
