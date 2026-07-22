@@ -19,43 +19,31 @@
   gap: 10px;
 }
 
-.ldh-header__signup,
 .ldh-header__link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 999px;
-  font-weight: 850;
-  transition: transform .2s ease, filter .2s ease, background .2s ease;
-}
-
-.ldh-header__signup {
   min-height: 46px;
-  padding: 0 18px;
-  border: 1px solid rgba(23, 23, 23, .22);
-  background: transparent;
-  color: #181817;
-  font-size: 1.45rem;
-}
-
-.ldh-header__signup:hover {
-  transform: translateY(-2px);
-  background: rgba(35, 48, 165, .06);
-}
-
-.ldh-header__link {
-  min-height: 54px;
-  padding: 0 28px;
-  border: 2px solid #181817;
+  padding: 0 20px;
+  border: 1px solid #181817;
+  border-radius: 999px;
   background: var(--ldh-coral);
   color: #181817;
-  font-size: 1.65rem;
-  box-shadow: 0 8px 0 rgba(17, 26, 86, .12);
+  font-size: 1.45rem;
+  font-weight: 850;
+  box-shadow: none;
+  transition: transform .2s ease, filter .2s ease;
 }
 
 .ldh-header__link:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   filter: brightness(.97);
+}
+
+/* Hide the dedicated About navigation item; the concise story remains on the homepage. */
+.ldh-nav a[href$="/about/"],
+.ldh-nav a[href$="/about"] {
+  display: none;
 }
 
 /* v2.3 — requested CTA correction */
@@ -107,9 +95,7 @@
   align-items: end;
 }
 
-.ldh-about__intro h2 {
-  max-width: 820px;
-}
+.ldh-about__intro h2 { max-width: 820px; }
 
 .ldh-about__intro > p {
   margin: 0;
@@ -201,17 +187,9 @@
 
 @media (max-width: 1050px) {
   .ldh-about__intro,
-  .ldh-about__positioning {
-    grid-template-columns: 1fr;
-  }
-
-  .ldh-about__journey {
-    grid-template-columns: repeat(2,minmax(0,1fr));
-  }
-
-  .ldh-about__pillars {
-    justify-content: flex-start;
-  }
+  .ldh-about__positioning { grid-template-columns: 1fr; }
+  .ldh-about__journey { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .ldh-about__pillars { justify-content: flex-start; }
 }
 
 @media (max-width: 700px) {
@@ -220,50 +198,27 @@
     padding: 10px 14px;
     gap: 10px;
   }
-
   .ldh-brand img {
     width: 150px;
     height: 48px;
   }
-
   .ldh-header__actions {
     margin-left: auto;
     gap: 6px;
   }
-
-  .ldh-header__signup {
-    min-height: 40px;
-    padding: 0 12px;
+  .ldh-header__link {
+    min-height: 42px;
+    padding: 0 14px;
     font-size: 1.25rem;
   }
-
-  .ldh-header__link {
-    min-height: 44px;
-    padding: 0 14px;
-    font-size: 1.3rem;
-    box-shadow: 0 5px 0 rgba(17, 26, 86, .12);
-  }
-
   .ldh-lenses span {
     font-size: 1rem;
     padding: 6px 9px;
   }
-
-  .ldh-about__journey {
-    grid-template-columns: 1fr;
-  }
+  .ldh-about__journey { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 480px) {
-  .ldh-brand img {
-    width: 108px;
-  }
-
-  .ldh-header__signup {
-    padding: 0 10px;
-  }
-
-  .ldh-header__link {
-    padding: 0 11px;
-  }
+  .ldh-brand img { width: 108px; }
+  .ldh-header__link { padding: 0 11px; }
 }
