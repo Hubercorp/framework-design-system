@@ -1,11 +1,10 @@
 <section class="ldh-hero">
   <div class="ldh-hero__copy">
-    <span class="ldh-kicker">The Liège Data Hub · Make it happen</span>
+    <span class="ldh-kicker">The Liège Data Hub by Jérôme Huberty</span>
     <h1>{{@custom.hero_title}}</h1>
     <h2>{{@custom.hero_subtitle}}</h2>
     <p>{{@custom.hero_description}}</p>
     <div class="ldh-actions">
-      <a class="ldh-button" href="{{@custom.primary_cta_url}}">{{@custom.primary_cta_text}} <span aria-hidden="true">→</span></a>
       <a class="ldh-text-link" href="{{@custom.secondary_cta_url}}">{{@custom.secondary_cta_text}} <span aria-hidden="true">↗</span></a>
     </div>
     <div class="ldh-proof" aria-label="Areas of expertise">
@@ -14,13 +13,13 @@
   </div>
   <div class="ldh-hero__visual" aria-hidden="true">
     <div class="ldh-hero__disc"></div>
-    {{#if @site.logo}}
-      <img src="{{@site.logo}}" alt="">
-    {{else}}
-      <div class="ldh-mascot-fallback">LDH</div>
-    {{/if}}
+    <img class="ldh-hero__data-guy" src="{{asset "images/logo/original-data-guy-logo.svg"}}" alt="">
     <div class="ldh-lenses" aria-hidden="true">
-      <span>Model</span><span>Build</span><span>Trust</span><span>Align</span><span>Lead</span>
+      <span class="ldh-lens ldh-lens--1">Model</span>
+      <span class="ldh-lens ldh-lens--2">Build</span>
+      <span class="ldh-lens ldh-lens--3">Trust</span>
+      <span class="ldh-lens ldh-lens--4">Align</span>
+      <span class="ldh-lens ldh-lens--5">Lead</span>
     </div>
   </div>
 </section>
